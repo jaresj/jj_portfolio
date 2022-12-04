@@ -63,10 +63,10 @@ const Footer = () => {
           className='p-text'
           placeholder='Your Message'
           value={message}
-          name={message}
+          name='message'
           onChange={handleChangeInput}
           />
-          <button type='button' className='p-text' onClick={handleSubmit}>{loading ? 'Sending' : 'Sent Message'}Send Message</button>
+          <button type='button' className='p-text' onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
       </div>
       : <div>
